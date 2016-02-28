@@ -1,1 +1,0 @@
-pub const NTHREADS: i32 = 10;
