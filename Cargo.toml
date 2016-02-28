@@ -4,4 +4,4 @@ name = "rust-learning"
 version = "0.0.2"
 authors = [ "Quentin Parrod <qparrod@gmail.com>" ]
 
-build="main.rs"
+build="src/main.rs"

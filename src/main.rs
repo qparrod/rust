@@ -1,6 +1,7 @@
 use std::thread;
+use lib::consts; // internal module
 
-static NTHREADS: i32 = 10;
+pub mod lib;
 
 fn main()
 {
@@ -9,7 +10,7 @@ fn main()
     let mut children = vec![];
     let mut done     = false;
 
-    for i in 0..NTHREADS
+    for i in 0..consts::NTHREADS
     {
         // create thread
         let child = thread::spawn(move ||

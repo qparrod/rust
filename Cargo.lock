@@ -1,4 +1,4 @@
 [root]
-name = "hello_world"
-version = "0.0.1"
+name = "rust-learning"
+version = "0.0.2"
 
