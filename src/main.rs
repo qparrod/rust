@@ -1,11 +1,18 @@
+// external modules
 use std::thread;
-use lib::consts; // internal module
+
+extern crate time;
+use std::time;
+
+// internal modules
+use lib::consts;
+use lib::log;
 
 pub mod lib;
 
 fn main()
 {
-    println!("test result {}", test(6));
+    log::print("test result {}", test(6));
     
     let mut children = vec![];
     let mut done     = false;

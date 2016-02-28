@@ -5,3 +5,7 @@ version = "0.0.2"
 authors = [ "Quentin Parrod <qparrod@gmail.com>" ]
 
 build="src/main.rs"
+
+[dependencies]
+time = "0.1"
+
