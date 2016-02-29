@@ -1,3 +1,4 @@
+/*
 extern crate time;
 
 use std::time;
@@ -16,3 +17,4 @@ pub mod log
     }
     
 }
+*/

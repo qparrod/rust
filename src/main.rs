@@ -2,7 +2,7 @@
 use std::thread;
 
 extern crate time;
-use std::time;
+//use std::time::*;
 
 // internal modules
 use lib::consts;
@@ -12,7 +12,10 @@ pub mod lib;
 
 fn main()
 {
-    log::print("test result {}", test(6));
+    let currentTime = time::now();
+    //let min = currentTime::tm_min;
+    //println!("{}", min.to_string());
+    //log::print("test result {}", test(6));
     
     let mut children = vec![];
     let mut done     = false;

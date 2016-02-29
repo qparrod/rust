@@ -1,11 +1,8 @@
 [package]
 
 name = "rust-learning"
-version = "0.0.2"
+version = "0.0.3"
 authors = [ "Quentin Parrod <qparrod@gmail.com>" ]
 
-build="src/main.rs"
-
 [dependencies]
-time = "0.1"
-
+time = "0.1.34"
