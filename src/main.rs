@@ -2,20 +2,17 @@
 use std::thread;
 
 extern crate time;
-//use std::time::*;
 
 // internal modules
 use lib::consts;
-use lib::log;
+pub mod lib; // lib as folder lib
 
-pub mod lib;
+use log::*;
+mod log; // lib as source lib (log.rs)
 
 fn main()
 {
-    let currentTime = time::now();
-    //let min = currentTime::tm_min;
-    //println!("{}", min.to_string());
-    //log::print("test result {}", test(6));
+    verbose("OK!");
     
     let mut children = vec![];
     let mut done     = false;
@@ -43,8 +40,4 @@ fn main()
         // Wait for the thread to finish. Returns a result.
         let _ = child.join();
     }
-}
-
-fn test(x: i32) -> i32 {
-    return x + 1;
 }
