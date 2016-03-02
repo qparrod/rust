@@ -10,8 +10,10 @@ pub mod lib; // lib as folder lib
 use log::*;
 mod log; // lib as source lib (log.rs)
 
+
 fn main()
 {
+    init();
     verbose("OK!");
     
     let mut children = vec![];
