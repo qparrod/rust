@@ -3,10 +3,11 @@ extern crate time;
 use std::error::Error;
 use std::fs::File;
 use std::path::Path;
+use std::path::Display;
 
-static path = Path::new("log/test.log");
-static display = path.display();
-static mut file;
+static path : Path = Path::new("log/test.log");
+static display : Display = path.display();
+const file : File = 0 as File;
 
 pub fn init() -> ()
 {
@@ -19,7 +20,7 @@ pub fn init() -> ()
 
 pub fn verbose(to_print : &str) -> ()
 {
-    let line = "[" + time::now().rfc822() + "] " + to_print; 
+    let line = "[" + time::now().rfc822() + "] " + to_print;
     
     //println!("[{}] {} ", current_time.rfc822(), to_print);// redirect into a file
     
